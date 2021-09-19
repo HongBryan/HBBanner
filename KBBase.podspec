@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KBBase"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "基础库"
   s.description  = "基础库"
   s.homepage     = "http://www.homeking365.com"
@@ -17,17 +17,17 @@ Pod::Spec.new do |s|
   # s.resource_bundles = {'HKInnerBundle' => ['HKInnerLibs/resource/*.*']}  #该种方式无法在cocoapod直接使用
   # s.resources    = "HKInnerLibs/resource/HKInnerBundle.bundle"   
 
-  s.subspec 'HKJSONBase' do |subspec|
-      subspec.source_files = "HKJSONBase/*.{swift}"
+  s.subspec 'KBJSONBase' do |subspec|
+      subspec.source_files = "KBJSONBase/*.{swift}"
       subspec.dependency "HandyJSON"
       subspec.dependency "SwiftyJSON", "~> 4.0.0"
   end
 
-  s.subspec 'HKDatabase' do |subspec|
-      subspec.source_files = "HKDatabase/*.{swift}"
+  s.subspec 'KBDatabase' do |subspec|
+      subspec.source_files = "KBDatabase/*.{swift}"
       subspec.dependency "HandyJSON"
       subspec.dependency "SwiftyJSON", "~> 4.0.0"
       subspec.dependency "HWCDB.swift"
-      subspec.dependency 'HKBase/HKJSONBase'
+      subspec.dependency 'KBBase/KBJSONBase'
   end
 end
