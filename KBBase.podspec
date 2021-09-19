@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KBBase"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "基础库"
   s.description  = "基础库"
   s.homepage     = "https://github.com/HongBryan"
