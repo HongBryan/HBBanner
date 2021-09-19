@@ -1,0 +1,6 @@
+framework module Pods_HKBase {
+  umbrella header "Pods-HKBase-umbrella.h"
+
+  export *
+  module * { export * }
+}

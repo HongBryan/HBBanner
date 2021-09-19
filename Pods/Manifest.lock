@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (4.8.2)
+  - HandyJSON (5.0.2)
+  - HWCDB.swift (0.0.10):
+    - HWCDB.swift/sqlcipher (= 0.0.10)
+  - HWCDB.swift/sqlcipher (0.0.10)
+  - SwiftyJSON (4.0.0)
+  - SwiftyRSA (1.5.0):
+    - SwiftyRSA/ObjC (= 1.5.0)
+  - SwiftyRSA/ObjC (1.5.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.1)
+  - HandyJSON
+  - HWCDB.swift
+  - SwiftyJSON (~> 4.0.0)
+  - SwiftyRSA
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - HandyJSON
+    - HWCDB.swift
+    - SwiftyJSON
+    - SwiftyRSA
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  HWCDB.swift: cd203d1c5cb7787e3da80b96686df2316aea1ce7
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwiftyRSA: 6e528fb1b1a87d5111c48081083b141d6d65f1cf
+
+PODFILE CHECKSUM: 341997a2a28e5dc6ed501927de944aff15d8d172
+
+COCOAPODS: 1.11.0
