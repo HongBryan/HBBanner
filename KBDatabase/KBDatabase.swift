@@ -11,7 +11,7 @@ import Foundation
 import WCDBSwift
 
 //MARK: - 数据库表基础模型
-public protocol KBBaseDBTableModel: TableCodable, HKBaseJSONModel {
+public protocol KBBaseDBTableModel: TableCodable, KBBaseJSONModel {
     static func tableName() -> String       //表名称,必填
     static func primaryKeys() -> [String]?  //主键
 }
@@ -37,9 +37,9 @@ class KBDatabaseModel {
     }
 }
 
-extension HKDatabaseModel {
+extension KBDatabaseModel {
     //MARK: - Public Methods
-    public func createTable<Root: HKBaseDBTableModel>(rootType: Root.Type) {
+    public func createTable<Root: KBBaseDBTableModel>(rootType: Root.Type) {
         let tblName = rootType.tableName()
         do {
             try wcdb?.create(table: tblName, of: rootType.self)
@@ -48,7 +48,7 @@ extension HKDatabaseModel {
         }
     }
     
-    public func insert<HKTable: HKBaseDBTableModel>(tblModel: HKTable) {
+    public func insert<HKTable: KBBaseDBTableModel>(tblModel: HKTable) {
         let tblName = HKTable.tableName()
         do {
             try wcdb?.insert(objects: tblModel, intoTable: tblName)
@@ -58,7 +58,7 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 依赖于主键进行查询
-    public func select<HKTable: HKBaseDBTableModel>(tblModel: HKTable?) -> HKTable? {
+    public func select<HKTable: KBBaseDBTableModel>(tblModel: HKTable?) -> HKTable? {
         let tables = selects(tblModel: tblModel, isPrimaryLimit: true)
         guard let selectModel = tables?.first else {
             return nil
@@ -68,12 +68,12 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 根据tblModel中有赋值的字段进行查询
-    public func selects<HKTable: HKBaseDBTableModel>(tblModel: HKTable?) -> [HKTable]? {
+    public func selects<HKTable: KBBaseDBTableModel>(tblModel: HKTable?) -> [HKTable]? {
         return selects(tblModel: tblModel, isPrimaryLimit: false)
     }
     
     //MARK: - 根据tblModel中有赋值的字段进行查询
-    private func selects<HKTable: HKBaseDBTableModel>(tblModel: HKTable?, isPrimaryLimit: Bool) -> [HKTable]? {
+    private func selects<HKTable: KBBaseDBTableModel>(tblModel: HKTable?, isPrimaryLimit: Bool) -> [HKTable]? {
         guard let hkwcdb = wcdb else {
             return nil
         }
@@ -99,8 +99,8 @@ extension HKDatabaseModel {
             } else {
                 continue
             }
-            values.hk_append(val)
-            conditions.hk_append(string)
+            values.kb_append(val)
+            conditions.kb_append(string)
         }
         selectSql.append(conditions.joined(separator: " and "))
         var tables: [HKTable]?
@@ -115,7 +115,7 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 针对主键删除,会单独把主键拿出来对比删除
-    public func delete<HKTable: HKBaseDBTableModel>(tblModel: HKTable?) -> Bool {
+    public func delete<HKTable: KBBaseDBTableModel>(tblModel: HKTable?) -> Bool {
         var isSuccess = true
         guard let dict = tblModel?.toDict() else {
             return false
@@ -153,8 +153,8 @@ extension HKDatabaseModel {
             } else {
                 continue
             }
-            values.hk_append(val)
-            conditions.hk_append(string)
+            values.kb_append(val)
+            conditions.kb_append(string)
         }
         let deleteSql = "delete from " + tblName + " where " + conditions.joined(separator: " and ")
         do {
@@ -168,11 +168,11 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 根据tblModel中有赋值的字段进行删除
-    public func deletes<HKTable: HKBaseDBTableModel>(tblModel: HKTable?) -> Bool {
+    public func deletes<HKTable: KBBaseDBTableModel>(tblModel: HKTable?) -> Bool {
         return deletes(tblModel: tblModel, isPrimaryLimit: false)
     }
     
-    private func deletes<HKTable: HKBaseDBTableModel>(tblModel: HKTable?, isPrimaryLimit: Bool) -> Bool {
+    private func deletes<HKTable: KBBaseDBTableModel>(tblModel: HKTable?, isPrimaryLimit: Bool) -> Bool {
         var isSuccess = true
         guard let dict = tblModel?.toDict() else {
             return false
@@ -211,8 +211,8 @@ extension HKDatabaseModel {
             } else {
                 continue
             }
-            values.hk_append(val)
-            conditions.hk_append(string)
+            values.kb_append(val)
+            conditions.kb_append(string)
         }
         
         let deleteSql = "delete from " + tblName + " where " + conditions.joined(separator: " and ")
@@ -225,7 +225,7 @@ extension HKDatabaseModel {
         return isSuccess
     }
     
-    public func forceInsert<HKTable: HKBaseDBTableModel>(tblModel: HKTable) -> Bool {
+    public func forceInsert<HKTable: KBBaseDBTableModel>(tblModel: HKTable) -> Bool {
         var isSuccess = true
         _ = delete(tblModel: tblModel)
         do {
@@ -238,7 +238,7 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 删除某个表所有数据
-    public func delete<Root: HKBaseDBTableModel>(rootType: Root.Type) -> Bool {
+    public func delete<Root: KBBaseDBTableModel>(rootType: Root.Type) -> Bool {
         var isSuccess: Bool = true
         let tblName = rootType.tableName()
         do {
@@ -252,7 +252,7 @@ extension HKDatabaseModel {
     }
     
     //MARK: - 只传类,把表中所有的数据全部查找出来
-    public func select<Root: HKBaseDBTableModel>(rootType: Root.Type) -> [Root]? {
+    public func select<Root: KBBaseDBTableModel>(rootType: Root.Type) -> [Root]? {
         let tblName = rootType.tableName()
         var objects: [Root]?
         do {
