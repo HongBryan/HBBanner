@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "KBBase"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "基础库"
   s.description  = "基础库"
   s.homepage     = "https://github.com/HongBryan"
@@ -23,11 +23,11 @@ Pod::Spec.new do |s|
       subspec.dependency "SwiftyJSON", "~> 4.0.0"
   end
 
-  s.subspec 'KBDatabase' do |subspec|
-      subspec.source_files = "KBDatabase/*.{swift}"
-      subspec.dependency "HandyJSON"
-      subspec.dependency "SwiftyJSON", "~> 4.0.0"
-      subspec.dependency "HWCDB.swift"
-      subspec.dependency 'KBBase/KBJSONBase'
-  end
+  # s.subspec 'KBDatabase' do |subspec|
+  #     subspec.source_files = "KBDatabase/*.{swift}"
+  #     subspec.dependency "HandyJSON"
+  #     subspec.dependency "SwiftyJSON", "~> 4.0.0"
+  #     subspec.dependency "HWCDB.swift"
+  #     subspec.dependency 'KBBase/KBJSONBase'
+  # end
 end
