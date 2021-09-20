@@ -13,7 +13,7 @@ target 'KBBase' do
 end
 
 target 'KBDatabase' do
-    pod 'HWCDB.swift'
+    pod 'HWCDB.swift', '~> 0.0.12'
     pod 'HandyJSON'
     pod 'SwiftyJSON', '~> 4.0.0'
 end

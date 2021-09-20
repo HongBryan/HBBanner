@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3984D8704B7DE6B8D7C157BA /* Pods_HKBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C412C312564A46EE82046B21 /* Pods_HKBase.framework */; };
-		8E7C42C74E56EEC98CEB001F /* Pods_HKDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60585F311023D420CED45DF4 /* Pods_HKDatabase.framework */; };
+		026A2319B99D0894A934E2A3 /* Pods_KBDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAC5CF0F4895C3FD967168D7 /* Pods_KBDatabase.framework */; };
 		93F87E9326F2DAC400993108 /* KBArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F87E9226F2DAC400993108 /* KBArrayHelper.swift */; };
 		93F87EBE26F7222600993108 /* KBDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F87EBD26F7222600993108 /* KBDatabase.swift */; };
 		93F87EDC26F72DDD00993108 /* KBBaseJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F87E9826F42D7200993108 /* KBBaseJSONModel.swift */; };
 		93F87EDD26F72DDE00993108 /* KBBaseJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F87E9826F42D7200993108 /* KBBaseJSONModel.swift */; };
 		93F87EDE26F72E2700993108 /* KBArrayHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F87E9226F2DAC400993108 /* KBArrayHelper.swift */; };
+		9E2303DA65A2471816035E68 /* Pods_KBBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63B548C57F56B1F4A650EAF9 /* Pods_KBBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +21,14 @@
 		09271C44C7858A639A5B703C /* Pods-HKBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKBase.debug.xcconfig"; path = "Target Support Files/Pods-HKBase/Pods-HKBase.debug.xcconfig"; sourceTree = "<group>"; };
 		0BB3A375AC25B3B59B58BAC4 /* Pods-HKCrypto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKCrypto.debug.xcconfig"; path = "Target Support Files/Pods-HKCrypto/Pods-HKCrypto.debug.xcconfig"; sourceTree = "<group>"; };
 		1BA9BE98924DA07D668B4605 /* Pods-HKBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKBase.release.xcconfig"; path = "Target Support Files/Pods-HKBase/Pods-HKBase.release.xcconfig"; sourceTree = "<group>"; };
+		2EA43F0036FFD1977CEC52DD /* Pods-KBBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBBase.debug.xcconfig"; path = "Target Support Files/Pods-KBBase/Pods-KBBase.debug.xcconfig"; sourceTree = "<group>"; };
 		3E840B3BD2139E7A163674F0 /* Pods-HKJSONKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKJSONKit.debug.xcconfig"; path = "Target Support Files/Pods-HKJSONKit/Pods-HKJSONKit.debug.xcconfig"; sourceTree = "<group>"; };
 		40652DF49454458062243F79 /* Pods_HKJSONKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKJSONKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		571AC482C47ED20BB06BB975 /* Pods-HKJSONKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKJSONKit.release.xcconfig"; path = "Target Support Files/Pods-HKJSONKit/Pods-HKJSONKit.release.xcconfig"; sourceTree = "<group>"; };
-		60585F311023D420CED45DF4 /* Pods_HKDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59E79C1CE3750BFF77C03091 /* Pods-KBBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBBase.release.xcconfig"; path = "Target Support Files/Pods-KBBase/Pods-KBBase.release.xcconfig"; sourceTree = "<group>"; };
+		63B548C57F56B1F4A650EAF9 /* Pods_KBBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		784CD422AAF2C417CAB7A1C7 /* Pods-HKDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKDatabase.release.xcconfig"; path = "Target Support Files/Pods-HKDatabase/Pods-HKDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		8DF86BF9AE773B4A8FE4E808 /* Pods-KBDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBDatabase.release.xcconfig"; path = "Target Support Files/Pods-KBDatabase/Pods-KBDatabase.release.xcconfig"; sourceTree = "<group>"; };
 		93F87E1A26F04AC600993108 /* KBBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KBBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F87E1E26F04AC600993108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93F87E7326F0786E00993108 /* SwiftyRSA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyRSA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,7 +38,8 @@
 		93F87EA926F71C3900993108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93F87EBD26F7222600993108 /* KBDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KBDatabase.swift; sourceTree = "<group>"; };
 		C248A665E68DE4BB3B89F60A /* Pods-HKCrypto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKCrypto.release.xcconfig"; path = "Target Support Files/Pods-HKCrypto/Pods-HKCrypto.release.xcconfig"; sourceTree = "<group>"; };
-		C412C312564A46EE82046B21 /* Pods_HKBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HKBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC4EF2B8C7EA38D28BC13978 /* Pods-KBDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KBDatabase.debug.xcconfig"; path = "Target Support Files/Pods-KBDatabase/Pods-KBDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		DAC5CF0F4895C3FD967168D7 /* Pods_KBDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KBDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3984D8704B7DE6B8D7C157BA /* Pods_HKBase.framework in Frameworks */,
+				9E2303DA65A2471816035E68 /* Pods_KBBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7C42C74E56EEC98CEB001F /* Pods_HKDatabase.framework in Frameworks */,
+				026A2319B99D0894A934E2A3 /* Pods_KBDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				93F87E7326F0786E00993108 /* SwiftyRSA.framework */,
-				C412C312564A46EE82046B21 /* Pods_HKBase.framework */,
-				60585F311023D420CED45DF4 /* Pods_HKDatabase.framework */,
 				40652DF49454458062243F79 /* Pods_HKJSONKit.framework */,
+				63B548C57F56B1F4A650EAF9 /* Pods_KBBase.framework */,
+				DAC5CF0F4895C3FD967168D7 /* Pods_KBDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,6 +131,10 @@
 				784CD422AAF2C417CAB7A1C7 /* Pods-HKDatabase.release.xcconfig */,
 				3E840B3BD2139E7A163674F0 /* Pods-HKJSONKit.debug.xcconfig */,
 				571AC482C47ED20BB06BB975 /* Pods-HKJSONKit.release.xcconfig */,
+				2EA43F0036FFD1977CEC52DD /* Pods-KBBase.debug.xcconfig */,
+				59E79C1CE3750BFF77C03091 /* Pods-KBBase.release.xcconfig */,
+				CC4EF2B8C7EA38D28BC13978 /* Pods-KBDatabase.debug.xcconfig */,
+				8DF86BF9AE773B4A8FE4E808 /* Pods-KBDatabase.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -260,7 +268,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HKBase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KBBase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -282,7 +290,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-HKDatabase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-KBDatabase-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -438,7 +446,7 @@
 		};
 		93F87E2F26F04AC600993108 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 09271C44C7858A639A5B703C /* Pods-HKBase.debug.xcconfig */;
+			baseConfigurationReference = 2EA43F0036FFD1977CEC52DD /* Pods-KBBase.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -464,12 +472,13 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Debug;
 		};
 		93F87E3026F04AC600993108 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BA9BE98924DA07D668B4605 /* Pods-HKBase.release.xcconfig */;
+			baseConfigurationReference = 59E79C1CE3750BFF77C03091 /* Pods-KBBase.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -494,12 +503,13 @@
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = NO;
 			};
 			name = Release;
 		};
 		93F87EB726F71C3A00993108 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BAB22C91F5159FBBB0CAD0 /* Pods-HKDatabase.debug.xcconfig */;
+			baseConfigurationReference = CC4EF2B8C7EA38D28BC13978 /* Pods-KBDatabase.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -529,7 +539,7 @@
 		};
 		93F87EB826F71C3A00993108 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 784CD422AAF2C417CAB7A1C7 /* Pods-HKDatabase.release.xcconfig */;
+			baseConfigurationReference = 8DF86BF9AE773B4A8FE4E808 /* Pods-KBDatabase.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
